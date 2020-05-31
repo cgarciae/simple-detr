@@ -201,7 +201,7 @@ def no_alpha(x):
     return x[:3]
 
 
-def draw_boxes(image: Image, prob, boxes):
+def draw_boxes(image: Image, prob: torch.Tensor, boxes: torch.Tensor):
     # plt.figure(figsize=(16,10))
     plt.imshow(image)
 
@@ -218,16 +218,3 @@ def draw_boxes(image: Image, prob, boxes):
 
     plt.axis("off")
     plt.show()
-
-
-if __name__ == "__main__":
-
-    model = DETR(backbone="detr_resnet50", threshold=0.7, device="cuda")
-
-    for image_path in Path("test-images").iterdir():
-        with Image.open(image_path) as image:
-
-            scores, boxes = model.predict(image)
-
-            print("N objects:", len(scores))
-            draw_boxes(image, scores, boxes)
