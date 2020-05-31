@@ -37,7 +37,7 @@ Options:
 Usage: main.py [OPTIONS]
 
 Options:
-  --image-path PATH (default = test-images)
+  --images-path PATH (default = test-images)
   --backbone TEXT (default = detr_resnet50)
   --threshold FLOAT (default = 0.7)
   --device TEXT (default = cpu)

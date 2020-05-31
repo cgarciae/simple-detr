@@ -7,7 +7,7 @@ import typer
 
 
 def main(
-    image_path: Path = Path("test-images"),
+    images_path: Path = Path("test-images"),
     backbone: str = "detr_resnet50",
     threshold: float = 0.7,
     device: str = "cpu",
@@ -15,7 +15,7 @@ def main(
 
     model = DETR(backbone=backbone, threshold=threshold, device=device)
 
-    for image_path in image_path.iterdir():
+    for image_path in images_path.iterdir():
         try:
             with Image.open(image_path) as image:
 
