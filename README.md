@@ -1,13 +1,13 @@
 # Simple DETR
 
-This codebase simplifies the access to the DETR model, specifically it provides:
+This codebase simplifies the access to the [DETR](https://github.com/facebookresearch/detr) model, specifically it provides:
 
 * A configurable `DETR` class which gives you access to different backbones.
   * It inherits from `nn.Module` if you want to mix it with other pytorch code.
 * A `predict` method which performs lightweight postprocessing and gives you back bounding boxes and scores.
 
 
-This codebase takes the code from the [standalone notebook](https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_demo.ipynb) found on the official [detr](https://github.com/facebookresearch/detr) repo and structures it more like what you would use for a simple deployment or CLI tool.
+This codebase takes the code from the [standalone notebook](https://colab.research.google.com/github/facebookresearch/detr/blob/colab/notebooks/detr_demo.ipynb) found on the official repo and structures it more like what you would use for a simple deployment or CLI tool.
 
 ![architectre](https://github.com/facebookresearch/detr/raw/master/.github/DETR.png)
 
