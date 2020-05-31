@@ -3,7 +3,7 @@
 This codebase simplifies the access to the DETR model, specifically it provides:
 
 * A configurable `DETR` class which gives you access to different backbones.
-  * This class inherits from `nn.Module` if you want to mix it with other pytorch code.
+  * It inherits from `nn.Module` if you want to mix it with other pytorch code.
 * A `predict` method which performs lightweight postprocessing and gives you back bounding boxes and scores.
 
 
