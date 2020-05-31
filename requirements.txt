@@ -10,6 +10,9 @@ backcall==0.1.0 \
 bleach==3.1.5 \
     --hash=sha256:2bce3d8fab545a6528c8fa5d9f9ae8ebc85a56da365c7f85180bfe96a35ef22f \
     --hash=sha256:3c4c520fdb9db59ef139915a5db79f8b51bc2a7257ea0389f30c846883430a4b
+click==7.1.2 \
+    --hash=sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc \
+    --hash=sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a
 colorama==0.4.3; python_version >= "3.3" and sys_platform == "win32" or sys_platform == "win32" \
     --hash=sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff \
     --hash=sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1
@@ -344,6 +347,9 @@ tornado==6.0.4 \
 traitlets==4.3.3 \
     --hash=sha256:70b4c6a1d9019d7b4f6846832288f86998aa3b9207c6821f3578a6a6a467fe44 \
     --hash=sha256:d023ee369ddd2763310e4c3eae1ff649689440d4ae59d7485eb4cfbbe3e359f7
+typer==0.2.1 \
+    --hash=sha256:9b66756dfcc9e9f829a33f9019757225af0c8e87e1e692f103556335d5ae3b25 \
+    --hash=sha256:a8c49418f20c1d1b04a34424dded86cebf1f87042a8e448c6faa63cf38b9c0af
 wcwidth==0.1.9 \
     --hash=sha256:cafe2186b3c009a04067022ce1dcd79cb38d8d65ee4f4791b8888d6599d1bbe1 \
     --hash=sha256:ee73862862a156bf77ff92b09034fc4825dd3af9cf81bc5b360668d425f3c5f1
