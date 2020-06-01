@@ -169,11 +169,15 @@ class DETR(torch.nn.Module):
         outputs = self.model(image_t)
 
         # keep only predictions with 0.7+ confidence
-        probas = outputs["pred_logits"].to("cpu").softmax(-1)[0, :, :-1]
+        boxes = outputs["pred_boxes"].to("cpu")
+        logits = outputs["pred_logits"].to("cpu")
+
+        probas = logits.softmax(-1)  # get probabilities
+        probas = probas[0, :, :-1]  # exclude empty class
         keep = probas.max(-1).values > self.threshold
 
         scores = probas[keep]
-        boxes = outputs["pred_boxes"][0, keep].to("cpu")
+        boxes = boxes[0, keep]
 
         # convert boxes from [0; 1] to image scales
         boxes = self.rescale_bboxes(boxes, image.size)
