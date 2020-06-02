@@ -47,7 +47,7 @@ Options:
 You can use the `DETR` class on your own Python / PyTorch code. For example:
 
 ```python
-from detr image DETR
+from detr import DETR
 from PIL import Image
 
 model = DETR(backbone="detr_resnet50", threshold=0.7, device="cpu")
