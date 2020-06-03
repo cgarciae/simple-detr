@@ -23,8 +23,8 @@ def main(
 
                 print("N objects:", len(scores))
                 draw_boxes(image, scores, boxes)
-            except UnidentifiedImageError:
-                pass
+        except UnidentifiedImageError:
+            pass
 
 
 if __name__ == "__main__":
